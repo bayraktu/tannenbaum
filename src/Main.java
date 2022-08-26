@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("wir starten");
+
+        Ugur ugur = new Ugur();
+
+        System.out.println(ugur.greetings());
     }
 }
