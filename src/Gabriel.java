@@ -5,6 +5,6 @@ public class Gabriel {
     }
 
     public String getUnserName(){
-        return "Sum, Mueyessernur, Yasin, Ugur und Gabriel!";
+        return "Test merg conflict!";
     }
 }
