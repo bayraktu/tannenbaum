@@ -7,4 +7,8 @@ public class Gabriel {
     public String getUnserName(){
         return "Superman";
     }
+
+    private void eineMethode(){
+        System.out.println("methooode");
+    }
 }
