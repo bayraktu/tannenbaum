@@ -11,4 +11,8 @@ public class Gabriel {
     private void eineMethode(){
         System.out.println("methooode");
     }
+
+    public void auchEineMehtode(){
+        System.out.println("Hallo, bitte loesche mich nicht!");
+    }
 }
