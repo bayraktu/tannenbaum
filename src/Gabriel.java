@@ -7,4 +7,8 @@ public class Gabriel {
     public String getUnserName(){
         return "Superman";
     }
+
+    public void auchEineMehtode(){
+        System.out.println("Hallo, bitte loesche mich nicht!");
+    }
 }
