@@ -33,9 +33,9 @@ public class Mannschaft {
         //Kontrolliert zuerst, ob der Spieler überhaupt teil der Mannschaft ist.
         if (this.spielerListe.contains(spieler)){
             spielerListe.remove(spieler);
-            System.out.println(spieler.getName + " wurde erfolgreich aus dem Team entfernt!");
+            System.out.println(spieler.getName() + " wurde erfolgreich aus dem Team entfernt!");
         } else{
-            System.out.println(spieler.getName + " ist nicht teil dieser Mannschaft!");
+            System.out.println(spieler.getName() + " ist nicht teil dieser Mannschaft!");
         }
     }
 
@@ -44,7 +44,7 @@ public class Mannschaft {
         if (this.spielerListe.contains(spieler)){
             spielerListe.remove(spieler);
         } else{
-            System.out.println(spieler.getName + " ist nicht teil dieser Mannschaft!");
+            System.out.println(spieler.getName() + " ist nicht teil dieser Mannschaft!");
             //Fehlermeldung die abgefragt werden kann. Könnte auch eine Exception sein.
             return 1;
         }
@@ -52,7 +52,7 @@ public class Mannschaft {
         // kann er dem neuem hinzugefügt werden.
         neueMannschaft.addSpieler(spieler);
         spieler.setMannschaft(neueMannschaft.getName());
-        System.out.println(spieler.getName + " wurde erfolgreich transferiert!");
+        System.out.println(spieler.getName() + " wurde erfolgreich transferiert!");
         return 0;
     }
 
