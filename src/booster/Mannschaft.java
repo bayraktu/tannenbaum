@@ -8,6 +8,7 @@ public class Mannschaft {
     private ArrayList<Spieler> spielerListe = new ArrayList();
 
 
+
     //Konstruktor
     public Mannschaft(String name) {
         this.name = name;
@@ -53,5 +54,11 @@ public class Mannschaft {
         spieler.setMannschaft(neueMannschaft.getName());
         System.out.println(spieler.getName + " wurde erfolgreich transferiert!");
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Mannschaft " + name + "\n" +
+                "Spieler: " + spielerListe;
     }
 }
