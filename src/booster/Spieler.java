@@ -27,6 +27,10 @@ public class Spieler {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setAlter(int alter) {
         this.alter = alter;
     }
