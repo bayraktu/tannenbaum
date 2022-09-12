@@ -5,7 +5,10 @@ import java.util.ArrayList;
 
 public class Mannschaft {
     private String name;
-    private ArrayList<Spieler> spielerListe = new ArrayList();
+    private ArrayList<Spieler> spielerListe = new ArrayList<>();
+    private int kapazitaet = 28;
+    private int manschaftsgeld;
+
 
 
 
@@ -23,9 +26,33 @@ public class Mannschaft {
         this.name = name;
     }
 
+    public int getKapazitaet() {
+        return kapazitaet;
+    }
+
+    public void setKapazitaet(int kapazitaet) {
+        this.kapazitaet = kapazitaet;
+    }
+
+    public int getManschaftsgeld() {
+        return manschaftsgeld;
+    }
+
+    public void setManschaftsgeld(int manschaftsgeld) {
+        this.manschaftsgeld = manschaftsgeld;
+    }
+
+    public ArrayList<Spieler> getSpielerListe() {
+        return spielerListe;
+    }
+
     public void addSpieler(Spieler spieler){
+        if (spielerListe.size()<this.kapazitaet){
         spielerListe.add(spieler);
         System.out.println("Spieler " + spieler.getName() + " spielt jetzt bei " + this.getName() + "!");
+        } else {
+            System.out.println("Team ist voll!");
+        }
     }
 
     public void removeSpieler(Spieler spieler){
